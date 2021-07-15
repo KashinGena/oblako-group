@@ -1,0 +1,26 @@
+<main class='main'>
+    <div class="container">
+        <div class="main__inner">
+            <div class="main__divider">
+                <ul class='divider__navigation'>
+                    <li 
+                        (click)='change(0)'
+                        [ngClass]="{'active':active===0}"
+                        class="divider__navigation-link"
+                        >
+                            Групповое
+                    </li>
+                    <li 
+                        (click)='change(1)'
+                        class="divider__navigation-link"
+                        [ngClass]="{'active':active===1}"
+                        >
+                            Индивидуальное
+                    </li>
+                   
+                </ul>
+            </div>  
+        </div>
+
+    </div>
+</main>

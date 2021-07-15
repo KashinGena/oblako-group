@@ -1,0 +1,14 @@
+.menu__toggle {
+    padding: 14px 11px;
+}
+
+.row {
+    width: 18px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.54);
+    
+  }
+
+  .row + .row {
+      margin-top: 3px;
+  }

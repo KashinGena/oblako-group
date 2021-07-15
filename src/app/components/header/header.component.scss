@@ -1,0 +1,85 @@
+@import '../../../assets/styles/variables';
+.container {
+    max-width: 1162px;
+    margin: 0 auto;
+    
+ }
+
+ .header__body {
+   padding: 0 8px;
+   margin: 0 auto;
+ }
+.header {
+ 
+     margin-bottom: 32px;
+}
+  .header__top-title {
+    display: none;
+
+  }
+ .header__top {
+     display: flex;
+     justify-content: space-between;
+     margin: 12px 24px 24px 16px;
+ }
+ .btn-short {
+   display: none;
+ }
+ .btn-full span{
+    color: $color-primary;
+    font-size: 12px;
+  }
+
+  .btn-full img {
+      margin-right: 11.75px;
+  }
+
+  .header__breadcrumb {
+       margin-bottom: 20px;
+  }
+
+  .header__title {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 40px;
+      position: relative;
+      padding-left: 45px;
+      color: rgba(0, 0, 0, 0.87);
+
+      &::before {
+        content: '';
+        background-image: url('../../../assets/images/Planning.svg');
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 0;
+        bottom: 3px;
+
+      }
+  }
+
+
+
+  
+  @media (max-width:720px) {
+      .btn-full {
+        display: none;
+      }
+      .btn-short {
+        display: block;
+      }
+      .header__top-title {
+        display: flex;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        align-items: center;
+    
+      }
+
+      .header__title,
+      .header__breadcrumb {
+        display: none;
+      }
+
+  }
